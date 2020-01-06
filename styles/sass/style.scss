@@ -1,0 +1,11 @@
+@import 'setup';
+@import 'header';
+@import 'questions';
+@import 'results';
+
+
+@media(max-width: 425px){
+	h1{
+		font-size: 40px;
+	}
+}
