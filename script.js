@@ -184,7 +184,7 @@ const bachelorApp = {
 
 
 
-  		  if (scoreSum >=0 && scoreSum<=7) {
+  		  if (scoreSum >=0 && scoreSum<=6) {
 
   		    answerTitle += "You are Bekah Martinez! ";
 			
@@ -195,7 +195,7 @@ const bachelorApp = {
 
 
 
-  		  } if (scoreSum>=8 && scoreSum <=12) {
+  		  } if (scoreSum>=7 && scoreSum <=11) {
    		   answerTitle += "You are Ben Higgins!";
 
 		   answerImage += `<img src="./styles/sass/assets/ben.jpg">`
@@ -203,14 +203,14 @@ const bachelorApp = {
 
 		   answerBody += "You are considered the nicest person in Bachelor Nation. You don't always need all eyes on you, however, often everyone's eyes are on you because you're so freakin' nice.";
 
-   		 } if(scoreSum>=13 && scoreSum <=23){
+   		 } if(scoreSum>=12 && scoreSum <=18){
     		  answerTitle += "You are Katilin Bristowe!";
 
 			answerImage += `<img src="./styles/sass/assets/kaitlyn.jpg">`
 
 
 			  answerBody += "You love having a couple of cocktails and having a grand old time. You like to be the center of attention, although you would never admit that.";
-   		 } if(scoreSum >= 24){
+   		 } if(scoreSum >= 19){
 				answerTitle += "You are Nick Viall!";
 
 				answerImage += `<img src="./styles/sass/assets/nick.jpg">`
