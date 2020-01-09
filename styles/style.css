@@ -246,12 +246,28 @@ header div a {
 
 #results {
   padding: 5%;
+  font-family: 'Muli', sans-serif;
 }
 
 #results h4 {
   text-transform: uppercase;
   text-align: center;
   margin: 2%;
+}
+
+#results img {
+  height: 100px;
+  width: 175px;
+  display: block;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+#results p {
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  letter-spacing: 2px;
 }
 
 @media (max-width: 425px) {

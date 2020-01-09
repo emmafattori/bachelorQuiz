@@ -177,15 +177,20 @@ const bachelorApp = {
 		console.log(scoreSum);
 
 		let answerTitle = "<h4>";
+
 		let answerBody = "<p>";
-		let answerPhoto = "<img>";
-		
+
+		let answerImage = "";
+
 
 
   		  if (scoreSum >=0 && scoreSum<=7) {
+
   		    answerTitle += "You are Bekah Martinez! ";
 			
-			answerPhoto.src += "./styles/sass/assets/bekah.jpg";
+			answerImage += `<img src="./styles/sass/assets/bekah.jpg">`
+			
+
 			answerBody += "You like to have fun, but you are also smart with a good head on your shoulders. Even though you enjoy the bachelor, you realize that finding your spouse after a total of 3 dates is a little strange.";
 
 
@@ -193,14 +198,23 @@ const bachelorApp = {
   		  } if (scoreSum>=8 && scoreSum <=12) {
    		   answerTitle += "You are Ben Higgins!";
 
+		   answerImage += `<img src="./styles/sass/assets/ben.jpg">`
+
+
 		   answerBody += "You are considered the nicest person in Bachelor Nation. You don't always need all eyes on you, however, often everyone's eyes are on you because you're so freakin' nice.";
 
    		 } if(scoreSum>=13 && scoreSum <=23){
     		  answerTitle += "You are Katilin Bristowe!";
 
+			answerImage += `<img src="./styles/sass/assets/kaitlyn.jpg">`
+
+
 			  answerBody += "You love having a couple of cocktails and having a grand old time. You like to be the center of attention, although you would never admit that.";
    		 } if(scoreSum >= 24){
 				answerTitle += "You are Nick Viall!";
+
+				answerImage += `<img src="./styles/sass/assets/nick.jpg">`
+
 
 				answerBody += "Well, how do we put this, you are popular and know it. You want to be associated with bachelor nation until the day you die. You are not usually lucky in love, but somehow give great relationship advice.";
 
@@ -209,8 +223,9 @@ const bachelorApp = {
 			// Adding the answer in dynamically, by inserting an h4, and filling it with the appropriate text
   		  	answerTitle += "</h4>";
 			answerBody += "</p>";
+
 			
-   			document.getElementById("results").innerHTML = answerTitle + answerPhoto + answerBody;
+   			document.getElementById("results").innerHTML = answerTitle  + answerImage + answerBody;
 
 			// Scroll to the bottom to read the results on click
 			const scrollingElement = (document.scrollingElement || document.body);
